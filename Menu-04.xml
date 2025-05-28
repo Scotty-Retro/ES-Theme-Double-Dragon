@@ -34,25 +34,6 @@
         <zIndex>999</zIndex>
      </text> 
 
- 	  <image name="menu2" extra="true">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <size>1 1</size>        
-         <path>./_inc/menu2.png</path>
-		 <color>ffffff</color>
-         <zIndex>998</zIndex>          
-      </image> 
-	  
- 	  <image name="neonsmokebg" extra="true">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <size>1 1</size>        
-         <path>./_inc/neonsmokebg.png</path>
-		 <color>ffffff</color>
-         <zIndex>1</zIndex>          
-      </image> 
-
-
 	  <image name="wallpapers" extra="true">
          <origin>0 0</origin>
          <pos>0 0</pos>
