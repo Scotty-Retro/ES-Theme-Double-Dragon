@@ -16,7 +16,13 @@
 		<zIndex>50</zIndex>
 	 </carousel>
 
-
+	   <image name="menu4frame" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/frames/menu4.png</path>
+		 <zIndex>2</zIndex>
+      </image>
 
      <text name="systemInfo">
 	    <glowColor>000000</glowColor>

@@ -13,6 +13,10 @@
 		<visible>true</visible>
       </rating>
 
+  	 <video name="dragon eyes" extra="true">
+		<visible>false</visible>
+     </video>
+
    		<image name="md_thumbnail">
 			<origin>0.5 0.5</origin>
 			<pos>0.125 0.835</pos>

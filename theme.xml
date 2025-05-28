@@ -19,6 +19,7 @@
         <include subset="menu" name="Menu 04">./Menu-04.xml</include>
         <include subset="menu" name="Menu 05">./Menu-05.xml</include>
         <include subset="menu" name="Menu 06">./Menu-06.xml</include>
+        <include subset="menu" name="Menu 07">./Menu-07.xml</include>
 
         <include subset="logo" name="normal Logos">./clearlogos.xml</include>
         <include subset="logo" name="green neon Logos">./greenneon.xml</include>
