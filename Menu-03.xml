@@ -23,8 +23,6 @@
         <origin>0.5 0.5</origin>
         <delay>0</delay>
         <size>1 1</size>
-        <showSnapshotNoVideo>false</showSnapshotNoVideo>
-        <showSnapshotDelay>false</showSnapshotDelay>
         <color>FFFFFF</color>
         <zIndex>1</zIndex>
      </video>

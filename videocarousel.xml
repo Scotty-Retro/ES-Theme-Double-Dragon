@@ -9,13 +9,14 @@
 		<visible>false</visible>  
     </text>	
 
+  	 <video name="dragon eyes" extra="true">
+		<visible>false</visible>  
+     </video>
+
       <rating name="md_rating">
 		<visible>true</visible>
       </rating>
 
-  	 <video name="dragon eyes" extra="true">
-		<visible>false</visible>
-     </video>
 
    		<image name="md_thumbnail">
 			<origin>0.5 0.5</origin>
