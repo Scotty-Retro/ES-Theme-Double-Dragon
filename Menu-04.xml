@@ -1,0 +1,79 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+     <view name="system">
+
+     <carousel name="systemcarousel">
+		<type>vertical</type>
+		<pos>0 0</pos>
+		<size>1 1</size>
+		<origin>0 0</origin>
+		<color>00000000</color>
+		<logoSize>0.25 0.25</logoSize>
+		<logoAlignment>center</logoAlignment>
+		<maxLogoCount>7</maxLogoCount>
+		<defaultTransition>instant</defaultTransition>	
+		<zIndex>50</zIndex>
+	 </carousel>
+
+	   <image name="menu4frame" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/frames/menu4.png</path>
+		 <zIndex>2</zIndex>
+      </image>
+
+     <text name="systemInfo">
+	    <glowColor>000000</glowColor>
+        <pos>0 0.9</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color>
+        <fontPath>./_inc/fonts/.ttf</fontPath>
+	    <fontSize>0.040</fontSize>
+        <zIndex>999</zIndex>
+     </text> 
+
+ 	  <image name="menu2" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/menu2.png</path>
+		 <color>ffffff</color>
+         <zIndex>998</zIndex>          
+      </image> 
+	  
+ 	  <image name="neonsmokebg" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/neonsmokebg.png</path>
+		 <color>ffffff</color>
+         <zIndex>1</zIndex>          
+      </image> 
+
+
+	  <image name="wallpapers" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+		 <path>./default/_inc/wall.jpg</path>
+         <path>./_inc/wallpapers/${system.theme}.jpg</path>
+	     <storyboard>
+         <animation property="y" from="-2" begin="0" duration="0" mode="easyOut"/>
+         <animation property="scale" to="1.2" begin="350" autoreverse="true" duration="3200" repeat="forever" mode="easyIn"/>
+         <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		 </storyboard>
+		 <zIndex>1</zIndex>
+     </image>
+
+	       <helpsystem name="help">
+	 <iconColor>FFFFFF</iconColor>
+     <fontSize>0.04</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.5 0.98</pos>
+     <fontPath>./_inc/.ttf</fontPath>
+     </helpsystem>
+	
+     </view>
+     </theme>

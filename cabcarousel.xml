@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+	<customView name="cabcarousel" inherits="gamecarousel">
+<gamecarousel name="gamecarousel">
+<zIndex>43</zIndex>	      
+          <type>vertical_wheel</type>
+<defaultTransition>instant</defaultTransition>
+          <pos>0.28 0</pos>
+          <size>1 1</size>
+<logoScale>1.5</logoScale>
+<logoSize>0.150 0.260</logoSize>
+<color>00000000</color>
+<maxLogoCount>30</maxLogoCount>
+<logoRotation>8</logoRotation>
+<logoRotationOrigin>3 0.2</logoRotationOrigin>
+<logoAlignment>center</logoAlignment>   
+<imageSource>marquee</imageSource>
+</gamecarousel> 
+
+     <helpsystem name="help">
+	 <iconColor>FFFFFF</iconColor>
+     <fontSize>0.03</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.5 1.2</pos>
+       <fontPath>./_inc/fonts/.ttf</fontPath>
+     </helpsystem>
+
+  	 <video name="dragon eyes" extra="true">
+		<visible>false</visible>
+     </video>
+
+	   <image name="gcframe" extra="true">
+		<visible>false</visible>
+      </image>
+
+   <text name="md_name">
+		<visible>false</visible>  
+    </text>	
+
+
+   		<image name="md_thumbnail">
+			<origin>0.5 0.5</origin>
+			<pos>0.125 0.835</pos>
+			<maxSize>0.26 0.26</maxSize>
+		<storyboard event="activate">
+        <animation property="x" from="0.05" begin="0" duration="500" autoreverse="false" mode="easyInOut"/>
+		</storyboard>
+			<zIndex>999</zIndex>
+		</image>
+
+	<image name="logos" extra="true">
+        <pos>0.85 0.41</pos>
+        <maxSize>0.2 0.2</maxSize>
+		<path>./default/_inc/logo.png</path>
+		<path>./_inc/clearlogos/${system.theme}.png</path>
+		<color>ffffff</color>
+	    <rotation>90</rotation>  
+	    <zIndex>999</zIndex>
+	</image>
+
+  		<image name="md_marquee">
+        <pos>0.465 0.122</pos>
+        <maxSize>0.2 0.15</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="activate">
+		<animation property="rotation" to="720" begin="1000" autoreverse="false" duration="500"/>
+		<animation property="rotation" to="-720" begin="3000" autoreverse="false" duration="500"/>
+			</storyboard>
+			<zIndex>999</zIndex> 
+		</image>
+
+	   <image name="ddcab" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/dd.png</path>
+		 <zIndex>4</zIndex>
+      </image>
+     		
+
+	   <image name="overlay" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/overlay.png</path>
+		 <zIndex>2</zIndex>
+      </image>
+
+     <video name="md_video">
+		<color>ffffff</color>
+        <pos>0.465 0.475</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.25 0.28</size>
+		<delay>0.1</delay>
+		<effect>none</effect>		 
+        <showSnapshotNoVideo>false</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+		<zIndex>3</zIndex>
+     </video> 
+
+
+     <image name="md_image">
+        <pos>0.15 0.5</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.35 1</size>
+         <zIndex>1</zIndex>         
+      </image> 
+	
+	</customView>
+</theme>

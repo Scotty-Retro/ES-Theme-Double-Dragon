@@ -1,0 +1,83 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+     <view name="system">
+
+     <carousel name="systemcarousel">
+		<type>vertical</type>
+		<pos>0.005 0</pos>
+		<size>1 1</size>
+		<origin>0 0</origin>
+		<color>00000000</color>
+		<logoSize>0.175 0.175</logoSize>
+		<logoAlignment>left</logoAlignment>
+		<maxLogoCount>7</maxLogoCount>
+		<defaultTransition>instant</defaultTransition>	
+		<zIndex>50</zIndex>
+	 </carousel>
+
+	   <image name="menu6frame" extra="true">
+         <origin>0 0</origin>
+         <pos>-0.04 0</pos>
+         <size>1 1</size>
+         <path>./_inc/frames/menu6frame.png</path>
+		 <zIndex>3</zIndex>
+      </image>
+
+	   <image name="menu6dragon" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/menu6dragon.png</path>
+		 <zIndex>4</zIndex>
+      </image>
+
+     <text name="systemInfo">
+	    <glowColor>000000</glowColor>
+        <pos>0.05 0.73</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color>
+        <fontPath>./_inc/fonts/.ttf</fontPath>
+	    <fontSize>0.040</fontSize>
+        <zIndex>999</zIndex>
+     </text> 
+
+  
+ 	  <video name="menu6bg" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/menu6bg.mp4</path>
+		 <color>ffffff</color>
+         <zIndex>1</zIndex>          
+      </video> 
+
+	 <video name="backgroundvideo6" extra="true">
+        <default>./_inc/logo.mp4</default> 
+        <visible>true</visible>
+        <path>{random}</path>                
+        <pos>0.545 0.474</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.48 0.528</size>
+        <delay>0.1</delay>
+        <showSnapshotNoVideo>false</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+        <color>FFFFFF</color>
+        <storyboard>
+        <animation property="y" from="0.05" begin="0" duration="350" mode="easeOut"/>
+        <animation property="opacity" from="0" to="1" duration="550" mode="easeIn"/>
+        <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+        </storyboard>
+        <zIndex>2</zIndex>
+     </video>
+
+	       <helpsystem name="help">
+	 <iconColor>FFFFFF</iconColor>
+     <fontSize>0.04</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.56 0.98</pos>
+     <fontPath>./_inc/.ttf</fontPath>
+     </helpsystem>
+	
+     </view>
+     </theme>

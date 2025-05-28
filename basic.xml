@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+<!---------------------------basic------------------------------------- -->
+
+<view name="basic">	
+      <textlist name="gamelist">
+         <zIndex>5</zIndex>	      
+         <pos>0.376 0.06</pos>
+         <size>0.245 0.5</size>
+         <fontPath>./_inc/fonts/.ttf</fontPath>
+         <fontSize>0.0475</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <alignment>center</alignment>      
+		 <zIndex>1</zIndex>
+      </textlist>
+  
+     <helpsystem name="help">
+	 <iconColor>FFFFFF</iconColor>
+     <fontSize>0.02</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.5 0.985</pos>
+       <fontPath>./_inc/fonts/.ttf</fontPath>
+     </helpsystem>
+	 		 
+
+	   <image name="basicbg" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/basic.png</path>
+		 <zIndex>2</zIndex>
+      </image>
+	
+ <image name="logos" extra="true">
+        <pos>0.365 0.68</pos>
+        <maxSize>0.27 0.27</maxSize>
+		<path>./default/_inc/logo.png</path>
+		<path>./_inc/green logos/${system.theme}.png</path>
+		<color>ffffff</color>
+	    <zIndex>1</zIndex>
+	</image>
+</view>
+   
+   </theme>

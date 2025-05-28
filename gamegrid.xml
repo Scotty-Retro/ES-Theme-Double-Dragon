@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: es-theme-ComicScrap for Retrobat - Batocera
+version: 2.0
+author: Lehcim Cram Trebor
+inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy/es-theme-ComicBook
+-->
+
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="grid">
+
+	<imagegrid name="gamegrid">
+		<zIndex>500</zIndex>
+		<pos>0.0557291666666667 0.2453703703703704</pos>
+		<size>0.890625 0.4898148148148148</size>
+		<size ifSubset="gridVideo:besideGrid">0.7 0.4898148148148148</size>
+
+		<scrollSound>./../../_comicScrapV2Custom/scrollSounds/grid.wav</scrollSound>
+		<scrollSound>./../../_comicScrapV2Custom/scrollSounds/${system.theme}.wav</scrollSound>
+
+		<scrollSound>./${path.windows}/../../../../_comicScrapV2Custom/scrollSounds/grid.wav</scrollSound>
+		<scrollSound>./${path.windows}/../../../../_comicScrapV2Custom/scrollSounds/${system.theme}.wav</scrollSound>
+
+		<margin>0.012 0.024</margin>
+		<padding>0.025 0.02 0.025 0.02</padding>
+
+		<autoLayout>6 2</autoLayout>
+		<autoLayout if="${notWide}">5 2</autoLayout>
+		<autoLayout if="${ultraWide}">8 2</autoLayout>
+
+		<autoLayout ifSubset="gridVideo:besideGrid">5 2</autoLayout>
+		<autoLayout ifSubset="gridVideo:besideGrid" if="${notWide}">4 2</autoLayout>
+		<autoLayout ifSubset="gridVideo:besideGrid" if="${ultraWide}">6 2</autoLayout>
+
+		<animateSelection>false</animateSelection>
+		<centerSelection>false</centerSelection>
+		<scrollbarColor>202020bb</scrollbarColor>
+		<scrollbarCorner>0.6</scrollbarCorner>
+		<scrollbarSize>0.0025</scrollbarSize>
+		<autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
+		<scrollbarAlignment>left</scrollbarAlignment>
+		<imageSource>thumbnail</imageSource>
+		<showVideoAtDelay ifSubset="gridVideo:inTileVideo">600</showVideoAtDelay>
+		<showVideoAtDelay ifSubset="gridVideo:inTileVideo,showVideo:1000ms">1000</showVideoAtDelay>
+		<showVideoAtDelay ifSubset="gridVideo:inTileVideo,showVideo:2000ms">2000</showVideoAtDelay>
+		<showVideoAtDelay ifSubset="gridVideo:inTileVideo,showVideo:5000ms">5000</showVideoAtDelay>
+		<showVideoAtDelay ifSubset="gridVideo:inTileVideo,showVideo:never">999999000</showVideoAtDelay>
+	</imagegrid>
+
+	<gridtile name="default">
+		<backgroundColor>00000000</backgroundColor>
+		<backgroundEdgeColor>00000000</backgroundEdgeColor>
+		<backgroundCenterColor>00000000</backgroundCenterColor>
+		<backgroundCornerSize>9 9</backgroundCornerSize>
+		<selectionMode>image</selectionMode>
+		<padding>6 6</padding>
+		<imageColor>${tint}</imageColor>
+		<reflexion>0 0</reflexion>
+		<saturation>1</saturation>
+	</gridtile>
+
+	<gridtile name="selected">
+		<backgroundCenterColor>ca9b5380</backgroundCenterColor>
+		<backgroundEdgeColor>ca9b5380</backgroundEdgeColor>
+		<imageColor>ffffff</imageColor>
+		<saturation>1.2</saturation>
+	</gridtile>
+
+	<text name="gridtile">
+		<visible>false</visible>
+		<fontPath>./../fonts/Shaka Pow.ttf</fontPath>
+		<fontSize>0.018</fontSize>
+		<color>202020</color>
+		<glowColor>${g.glowColor}</glowColor>
+		<glowSize>${g.glowSize}</glowSize>
+		<glowOffset>${g.glowOffset}</glowOffset>
+		<verticalAlignment>center</verticalAlignment>
+		<alignment>center</alignment>
+	</text>
+
+	<image name="gridtile.favorite">
+		<path>./../favorite.png</path>
+		<pos>0.99 0.01</pos>
+		<maxSize>0.26 0.26</maxSize>
+		<origin>1 0</origin>
+		<horizontalAlignment>right</horizontalAlignment>
+		<color>${tint}</color>
+	</image>
+
+	<text name="gridtile:selected">
+		<visible>false</visible>
+	</text>
+
+	<image name="gridtile.image">
+		<linearSmooth>true</linearSmooth>
+		<roundCorners>0.024</roundCorners>
+	</image>  
+
+	<ninepatch name="gridtile.background:selected">
+		<animateColor>20202080</animateColor>
+		<animateColorTime>160</animateColorTime>
+	</ninepatch>
+
+</view>
+
+<customView name="gridMarquees" inherits="grid" displayName="${lang.gridMarquees}">
+
+	<imagegrid name="gamegrid">
+
+		<autoLayout>6 3</autoLayout>
+		<autoLayout if="${notWide}">5 3</autoLayout>
+		<autoLayout if="${ultraWide}">8 3</autoLayout>
+
+		<autoLayout ifSubset="gridVideo:besideGrid">5 3</autoLayout>
+		<autoLayout ifSubset="gridVideo:besideGrid" if="${notWide}">4 3</autoLayout>
+		<autoLayout ifSubset="gridVideo:besideGrid" if="${ultraWide}">6 3</autoLayout>
+
+		<imageSource>marquee</imageSource>
+		<margin>0.012 0.024</margin>
+		<padding>0.025 0.02 0.025 0.02</padding>
+	</imagegrid>
+
+</customView>
+
+<customView name="gridScreenshots" inherits="grid" displayName="${lang.gridScreenshots}">
+
+	<imagegrid name="gamegrid">
+
+		<autoLayout>5 2</autoLayout>
+		<autoLayout if="${notWide}">4 2</autoLayout>
+		<autoLayout if="${ultraWide}">7 2</autoLayout>
+
+		<autoLayout ifSubset="gridVideo:besideGrid">4 2</autoLayout>
+		<autoLayout ifSubset="gridVideo:besideGrid" if="${notWide}">3 2</autoLayout>
+		<autoLayout ifSubset="gridVideo:besideGrid" if="${ultraWide}">5 2</autoLayout>
+
+		<imageSource>image</imageSource>
+		<margin>0.01 0.01</margin>
+		<padding>0.015 0.015 0.015 0.015</padding>
+		<showVideoAtDelay ifSubset="gridVideo:besideGrid">600</showVideoAtDelay>
+		<showVideoAtDelay ifSubset="gridVideo:besideGrid,showVideo:1000ms">1000</showVideoAtDelay>
+		<showVideoAtDelay ifSubset="gridVideo:besideGrid,showVideo:2000ms">2000</showVideoAtDelay>
+		<showVideoAtDelay ifSubset="gridVideo:besideGrid,showVideo:5000ms">5000</showVideoAtDelay>
+		<showVideoAtDelay ifSubset="gridVideo:besideGrid,showVideo:never">999999000</showVideoAtDelay>
+	</imagegrid>
+
+	<gridtile name="default">
+		<imageSizeMode>minSize</imageSizeMode>
+	</gridtile>
+
+	<image name="gridtile.image">
+		<linearSmooth>false</linearSmooth>
+		<roundCorners>0.024</roundCorners>
+	</image>  
+
+	<image name="gridtile.marquee">
+		<linearSmooth>false</linearSmooth>
+		<roundCorners>0.024</roundCorners>
+		<color>${tint}cc</color>
+		<pos>0.5 0.5</pos>
+		<origin>0.5 0.5</origin>
+		<size>0.5 0.5</size>
+	</image>  
+
+	<image name="gridtile.marquee:selected">
+		<color>ffffff</color>
+		<pos>0.5 0.5</pos>
+		<origin>0.5 0.5</origin>
+		<size>0.80 0.80</size>
+	</image>
+
+	<image name="gridtile.marquee:videoplaying">
+		<color>ffffff</color>
+		<pos>0.01 0.87</pos>
+		<origin>0 0.5</origin>
+		<size>0.6 0.25</size>
+	</image>
+
+</customView>
+
+</theme>

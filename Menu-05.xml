@@ -1,0 +1,76 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+     <view name="system">
+
+     <carousel name="systemcarousel">
+		<type>vertical</type>
+		<pos>-0.0125 0</pos>
+		<size>1 1</size>
+		<origin>0 0</origin>
+		<color>00000000</color>
+		<logoSize>0.2 0.2</logoSize>
+		<logoAlignment>left</logoAlignment>
+		<maxLogoCount>7</maxLogoCount>
+		<defaultTransition>instant</defaultTransition>	
+		<zIndex>50</zIndex>
+	 </carousel>
+
+	 <video name="backgroundvideo5" extra="true">
+        <default>./_inc/logo.mp4</default> 
+        <visible>true</visible>
+        <path>{random}</path>                
+        <pos>0.645 0.474</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.545 0.528</size>
+        <delay>0.1</delay>
+        <showSnapshotNoVideo>false</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+        <color>FFFFFF</color>
+        <storyboard>
+        <animation property="y" from="0.05" begin="0" duration="350" mode="easeOut"/>
+        <animation property="opacity" from="0" to="1" duration="550" mode="easeIn"/>
+        <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+        </storyboard>
+        <zIndex>2</zIndex>
+     </video>
+
+	   <image name="menu5frame" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/frames/menu5frame.png</path>
+		 <zIndex>3</zIndex>
+      </image>
+
+     <text name="systemInfo">
+	    <glowColor>000000</glowColor>
+        <pos>0.125 0.73</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color>
+        <fontPath>./_inc/fonts/.ttf</fontPath>
+	    <fontSize>0.040</fontSize>
+        <zIndex>999</zIndex>
+     </text> 
+
+  
+ 	  <video name="neonsmokebg" extra="true">
+         <origin>0 0</origin>
+         <pos>0.15 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/neonsmoke.mp4</path>
+		 <color>ffffff</color>
+         <zIndex>1</zIndex>          
+      </video> 
+
+
+	       <helpsystem name="help">
+	 <iconColor>FFFFFF</iconColor>
+     <fontSize>0.04</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.6 0.98</pos>
+     <fontPath>./_inc/.ttf</fontPath>
+     </helpsystem>
+	
+     </view>
+     </theme>

@@ -1,0 +1,12 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+      <view name="system">
+
+     <image name="logo">
+       <linearSmooth>true</linearSmooth>
+       <path>./default/_inc/logo.png</path>
+       <path>./_inc/green logos/${system.theme}.png</path>
+	   </image>
+       </view>
+    </theme>
